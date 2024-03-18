@@ -20,16 +20,6 @@ class ClientController extends Controller
 
         return view("clients/addClient");
     }
-
-    public function addClientPatch(Request $request)
-    {
-        if(!Auth::user()->isAdmin())
-            return response(null, 403);
-
-        $ico = $request->input("ICO");
-
-        return view("clients/addClient", ["ico" => $ico]);
-    }
     
     public function editClient(int $id)
     {
