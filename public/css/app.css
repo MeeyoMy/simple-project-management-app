@@ -1,0 +1,21 @@
+
+th, td {
+  padding: 8px;
+  text-align: center
+}
+
+table {
+  width: 100%;
+}
+
+.text-danger {
+  color: rgb(225, 0, 0);
+}
+
+.text-info {
+  color: rgb(0, 54, 250);
+}
+
+.text-success {
+  color: rgb(1, 133, 1);
+}
