@@ -14,7 +14,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/clients/remove/{id}', [ClientController::class,'removeClient'])->name('client.remove');
     Route::get('/clients/add', [ClientController::class,'addClient'])->name('client.add');
     Route::post('/clients/add', [ClientController::class,'addClientPost'])->name('client.add');
-    Route::patch('/clients/add', [ClientController::class,'addClientPatch'])->name('client.add');
     Route::get('/clients/edit/{id}', [ClientController::class,'editClient'])->name('client.edit');
     Route::patch('/clients/edit/{id}', [ClientController::class,'editClientPatch'])->name('client.edit');
 
